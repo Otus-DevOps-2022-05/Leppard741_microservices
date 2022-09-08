@@ -1,0 +1,10 @@
+REPOSITORY                 TAG       IMAGE ID       CREATED          SIZE
+my-image/ubuntu-tmp-file   latest    3075b464041b   16 seconds ago   63.1MB
+ubuntu                     18.04     476c64862aa8   14 hours ago     63.1MB
+nginx                      latest    2b7d6430f78d   10 days ago      142MB
+hello-world                latest    feb5d9fea6a5   11 months ago    13.3kB
+
+### Ответ на задание со *
+
+Образ существует не зависимо от контейнера и является по сути шаблоном для запуска контейнера. При создании контейнера добавляется слой с возможностью записи, что позволяет менять его по своему усмотрению.
+Docker inspect показал, что у контейнера есть образ от которого он запущен, его конфигурация (сеть, статус, итд).
